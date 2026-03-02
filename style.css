@@ -113,7 +113,7 @@ body {
    ═══════════════════════════════════════════════ */
 header {
   position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
-  background: rgba(248,247,244,0.88);
+  background: white;
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--border);
@@ -124,16 +124,17 @@ header.scrolled { box-shadow: var(--shadow-sm); }
 .nav { display: flex; align-items: center; justify-content: space-between; height: 68px; }
 
 .logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
-.logo-icon {
-  width: 34px; height: 34px; border-radius: 8px;
-  background: linear-gradient(135deg, var(--blue), var(--teal));
-  display: flex; align-items: center; justify-content: center;
-  font-size: 16px; font-weight: 700; color: white;
-  font-family: 'Cormorant Garamond', serif;
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
 }
-.logo-text { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 700; color: var(--navy); line-height: 1; }
-.logo-sub  { font-size: 9px; letter-spacing: 2px; text-transform: uppercase; color: var(--text-muted); font-family: 'DM Sans', sans-serif; }
 
+.logo-img {
+  height: 60px;   /* Adjust size here */
+  width: auto;
+  object-fit: contain;
+}
 .nav-links { display: flex; align-items: center; gap: 32px; list-style: none; }
 .nav-links a { font-size: 14px; font-weight: 500; color: var(--text-mid); text-decoration: none; transition: color 0.2s; }
 .nav-links a:hover { color: var(--navy); }
