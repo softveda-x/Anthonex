@@ -131,7 +131,7 @@ header.scrolled { box-shadow: var(--shadow-sm); }
 }
 
 .logo-img {
-  height: 60px;   /* Adjust size here */
+  height: 45px;   /* Adjust size here */
   width: auto;
   object-fit: contain;
 }
